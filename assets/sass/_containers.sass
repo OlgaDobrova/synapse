@@ -1,0 +1,26 @@
+.container
+  max-width: 1920px
+  border: 1px solid red
+  width: 90%
+  margin: auto
+  display: flex
+  justify-content: start
+  &-header
+    //border: 1px solid blue
+    width: 288px
+    height: auto
+    background-color: #503314
+  &-smeta
+    //border: 1px solid blue
+    height: auto
+    width: 402px
+    background-color: #e2e2e2
+@media screen and ( max-width: 1200px )
+  .container
+    max-width: 960px
+@media screen and ( max-width: 1024px)
+  .container
+    max-width: 768px
+@media screen and ( max-width: 768px)
+  .container
+    max-width: 576px
