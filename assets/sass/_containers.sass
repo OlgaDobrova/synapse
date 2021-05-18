@@ -1,20 +1,24 @@
 .container
-  max-width: 1920px
+  width: 1920px
   border: 1px solid red
-  width: 90%
+  //width: 90%
   margin: auto
   display: flex
   justify-content: start
-  &-header
+  &-header //шапка
     //border: 1px solid blue
-    width: 288px
+    width: 260px
     height: auto
     background-color: #503314
-  &-smeta
+  &-smeta //блок смета
     //border: 1px solid blue
     height: auto
-    width: 402px
+    width: 400px
     background-color: #e2e2e2
+  &-chief //главный блок
+    border: 1px solid green
+    width: 1260px
+
 @media screen and ( max-width: 1200px )
   .container
     max-width: 960px

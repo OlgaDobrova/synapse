@@ -1,7 +1,6 @@
 .container {
-  max-width: 1920px;
+  width: 1920px;
   border: 1px solid red;
-  width: 90%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,15 +11,20 @@
 }
 
 .container-header {
-  width: 288px;
+  width: 260px;
   height: auto;
   background-color: #503314;
 }
 
 .container-smeta {
   height: auto;
-  width: 402px;
+  width: 400px;
   background-color: #e2e2e2;
+}
+
+.container-chief {
+  border: 1px solid green;
+  width: 1260px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -42,7 +46,7 @@
 }
 
 .header-menu {
-  margin-left: 60px;
+  margin-left: 40px;
   padding: 0;
   list-style: none;
 }
@@ -53,7 +57,7 @@
 
 .header-slogan {
   width: 150px;
-  margin-left: 51px;
+  margin-left: 30px;
   margin-bottom: 104px;
   text-transform: uppercase;
   font-size: 15px;
@@ -99,7 +103,7 @@
 
 .custom-logo {
   padding: 0;
-  margin: 29px 48px 26px;
+  margin: 29px 10px 26px;
   width: 159px;
   height: 167px;
 }
@@ -208,6 +212,44 @@
   font-size: 16px;
   line-height: 24px;
   color: #1c1c1c;
+  font-weight: 300;
+  font-family: "Roboto";
+}
+
+.house-project-wrapper {
+  margin-left: 30px;
+  width: 1105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.house-project-title {
+  font-size: 60px;
+  line-height: 60px;
+  color: #503314;
+  font-weight: bold;
+  font-family: "Roboto-Slab";
+  margin-left: 30px;
+}
+
+.house-project-swiper {
+  width: 775px;
+}
+
+.house-project-plan {
+  margin-left: 48px;
+}
+
+.house-project-plan-view {
+  margin-left: 15px;
+  width: 264px;
+  height: 277px;
+}
+
+.house-project-plan-text {
+  font-size: 18px;
+  color: #343434;
   font-weight: 300;
   font-family: "Roboto";
 }
