@@ -110,4 +110,44 @@
       <img src="images/arrow-right.png" alt="slider arrow - right">
     </div>
 
+<div class="equipment-wrapper"><!--Блок КОМПЛЕКТАЦИЯ-->
+  <div class="equipment-basic"><!--Комплектация "Базовая"-->
+    <div class="equipment-name"><svg class="equipment-icon">
+      <use xlink:href="<?php echo get_template_directory_uri()?>/assets/images/sprite.svg#equipment_basic"></use>
+    </svg><span class="equipment-name-text">Комплектация "Базовая"   (домокомплект)</span></div>
+    <ul class="equipment-list">
+      <li class="equipment-list-1">Рубленый стеновой комплект сруб в чашу</li>
+      <li class="equipment-list-2">Баки половые брус  100 на 200</li>
+      <li class="equipment-list-1">Пере... межэтажный брус 150 на 200</li>
+      <li class="equipment-list-2">Межвенцовый утеплитель (...)</li>
+      <li class="equipment-list-1">Стропила</li>
+      <li class="equipment-list-2">Обрешетка</li>
+      <li class="equipment-list-1">Нигеля березовые</li>
+      <li class="equipment-list-2">Рубероид, ... ... кровля</li>
+      <li class="equipment-list-1">Метизы</li>
+    </ul> 
+    <div  class="equipment-basic-price" >1 200 000 руб.</div>   
+  </div><!--/equipment-basic-->  
+
+  <div class="equipment-optimal"><!--Комплектация "Оптимальная"-->
+    <div class="equipment-name"><img src="<?php echo get_template_directory_uri()?>/assets/images/optimum.png" class="equipment-icon">
+    <span  class="equipment-name-text" >Комплектация "Оптимальная"    (домокомплект + монтаж)</span></div>
+      
+    <ul class="equipment-list">
+      <li class="equipment-list-1">Укладка межвенцового утеплителя</li>
+      <li class="equipment-list-2">Устройство стропильной системы</li>
+      <li class="equipment-list-1">Пере... межэтажный брус 150 на 200</li>
+      <li class="equipment-list-2">Межвенцовый утеплитель (...)</li>
+      <li class="equipment-list-1">Стропила</li>
+      <li class="equipment-list-2">Обрешетка</li>
+      <li class="equipment-list-1">Нигеля березовые</li>
+      <li class="equipment-list-2">Сборка стенового комплекта</li>
+      <li class="equipment-list-1">Монтаж балок пола</li>
+      <li class="equipment-list-2">Монтаж межэтажный балок</li>
+      <li class="equipment-list-1">Укладка гидро...</li>
+    </ul> 
+    <div  class="equipment-optimal-price" >1 690 000 руб.</div>   
+  </div><!--/equipment-optimal-->  
+</div><!--/.equipment-wrapper-->
+
 <?php get_footer();?>
