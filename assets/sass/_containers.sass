@@ -1,7 +1,6 @@
 .container
   width: 1920px
-  border: 1px solid red
-  //width: 90%
+  //border: 1px solid red
   margin: auto
   display: flex
   justify-content: start
@@ -10,6 +9,10 @@
     width: 260px
     height: auto
     background-color: #503314
+    -ms-flex-negative: 0
+    flex-shrink: 0
+    background: url(../images/tree-bgc.png) repeat-y
+    letter-spacing: -1px
   &-smeta //блок смета
     //border: 1px solid blue
     height: auto
@@ -18,7 +21,22 @@
   &-chief //главный блок
     //border: 1px solid green
     width: 1260px
-
+.bread-crumbs
+  margin-top: 30px
+  margin-left: 30px
+  //border: 1px solid green
+  font-size: 16px
+  line-height: 30px
+  color: #1c1c1c
+  font-weight: 300
+  font-family: "Roboto"
+  &-icon
+    //border: 1px solid green
+    padding: 0
+    width: 18px
+    height: 5px
+    margin-left: 10px
+    margin-right: 10px
 @media screen and ( max-width: 1200px )
   .container
     max-width: 960px

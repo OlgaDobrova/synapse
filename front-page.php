@@ -30,6 +30,10 @@
   </div><!--/.smeta-->
 </div><!--/.container-smeta-->
 <div class="container-chief"> <!--Завершится в footer-->
+  <!--Хлебные крошки-->
+  <div class="bread-crumbs">Главная
+    <img src="<?php echo get_template_directory_uri().'/assets/images/arrow.png';?>" alt="" class="bread-crumbs-icon">Проекты
+  </div><!--/bread-crumbs-->
   <h3 class="house-project-title"><?php the_title();?></h3>
   <div class="house-project-wrapper"> <!--Слайдер + планы дома-->
     <div class="house-project-swiper"><!--Слайдер-->
@@ -65,12 +69,13 @@
           ?>
         </div>
         <div class="swiper-pagination"></div>
-         <!-- If we need navigation buttons -->
+         <!-- Если нам нужны кнопки навигации -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <!-- If we need scrollbar -->
+        <!-- Если нам нужна полоса прокрутки -->
         <div class="swiper-scrollbar"></div>
+
       </div><!--/.swiper-container photo-report-slider-->
           
       <?php 
@@ -84,29 +89,26 @@
         wp_reset_postdata(); // Сбрасываем $post
       ?>
     </div><!--/.house-project-swiper/ -->
+
     <div class="house-project-plan"><!--планы дома-->
       <div class="house-project-plan-1">
         <div class="house-project-plan-text">1 этаж</div>
-        <img src="http://synapse/wp-content/uploads/2021/05/etazh1n.png" alt="" class="house-project-plan-view">
+        <img src="<?php echo get_template_directory_uri().'/assets/images/etazhn1.png';?>" alt="" class="house-project-plan-view">
       </div>
       <div class="house-project-plan-2">
         <div class="house-project-plan-text">2 этаж</div>
-        <img src="http://synapse/wp-content/uploads/2021/05/etazhn2.png" alt="" class="house-project-plan-view">
+        <img src="<?php echo get_template_directory_uri().'/assets/images/etazhn2.png';?>" alt="" class="house-project-plan-view">
       </div>
     </div><!--/.house-project-plan/ -->
-
-      <!--планы дома--> 
-
-        
-
   </div><!--/.house-project-wrapper-->
-<img width=773px src="images/lake.jpg" alt="project overview picture">
+
+<img width=773px src="images/carousel.jpg" alt="project overview picture">
     <div class="slider">
       <img src="images/arrow-left.png" alt="slider arrow - left">
-      <img src="<?php echo get_template_directory_uri().'/assets/images/lake1.png';?>" alt="smaller view picture">
-      <img src="<?php echo get_template_directory_uri().'/assets/images/lake2.png';?>" alt="smaller view picture">
-      <img src="<?php echo get_template_directory_uri().'/assets/images/lake3.png';?>" alt="smaller view picture">
-      <img src="<?php echo get_template_directory_uri().'/assets/images/lake4.png';?>" alt="smaller view picture">
+      <img src="<?php echo get_template_directory_uri().'/assets/images/carousel1.png';?>" alt="smaller view picture">
+      <img src="<?php echo get_template_directory_uri().'/assets/images/carousel2.png';?>" alt="smaller view picture">
+      <img src="<?php echo get_template_directory_uri().'/assets/images/carousel3.png';?>" alt="smaller view picture">
+      <img src="<?php echo get_template_directory_uri().'/assets/images/carousel4.png';?>" alt="smaller view picture">
       <img src="images/arrow-right.png" alt="slider arrow - right">
     </div>
 
@@ -150,4 +152,73 @@
   </div><!--/equipment-optimal-->  
 </div><!--/.equipment-wrapper-->
 
+<div class="delivery-wrapper"><!--Блок ДОСТАВКА-->
+  <h2 class="delivery-title">Доставка</h2>
+    <div class="delivery-text">Чтобы  доставить  домокоплект  по данному проекту <br>  необходимо <b class="delivery-text-bold">4 единицы техники</b></div>
+    <img src="<?php echo get_template_directory_uri()?>/assets/images/Car.png" class="delivery-icon">
+    <img src="<?php echo get_template_directory_uri()?>/assets/images/Car.png" class="delivery-icon">
+    <img src="<?php echo get_template_directory_uri()?>/assets/images/Car.png" class="delivery-icon">
+    <img src="<?php echo get_template_directory_uri()?>/assets/images/Car.png" class="delivery-icon">
+    <div class="delivery-text">Стоимость  доставки - <b class="delivery-text-bold">80 рублей</b> за один километр</div>
+</div><!--/delivery-wrapper-->
+
+<div class="descriptions-wrapper"><!--Блок ОПИСАНИЕ ПРОЕКТА-->
+  <div class="descriptions-title">Описание проекта</div>
+  <div class="descriptions-text">Проект "Волна" - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу для ужинов и завтраков.</div>
+  <img src="<?php echo get_template_directory_uri()?>/assets/images/description-house.png" class="descriptions-icon">
+</div><!--/descriptions-wrapper-->
+
+<div class="history-wrapper"><!--По проекту постороены дома-->
+  <div class="history-title">По  даному проекту были построены дома</div>
+  <ul class="history-lists">
+    <li class="history-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/history-haus1.png"  class="history-icon">
+      <div class="history-text1">Вологодская область,<br>д. Капустино</div>
+      <div class="history-docpdf">
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/history-doc1.png" class="history-doc">
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/pdf.png" class="history-pdf">
+      </div>
+    </li>
+    <li class="history-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/history-haus2.png"  class="history-icon">
+      <div class="history-text1">Вологодская область,<br>д. Капустино</div>
+      <div class="history-docpdf">
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/history-doc2.png" class="history-doc">
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/pdf.png" class="history-pdf">
+      </div>
+    </li>
+    <li class="history-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/history-video.png" class="history-video">
+      <div class="history-text2">Вологодская область, село Устье-Кубенское</div>
+    </li>
+  </ul> 
+</div><!--/history-wrapper-->
+<div class="photo-wrapper"><!--Фотогалерея-->
+  <ul class="photo-lists">
+    <li class="photo-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/history-haus2.png"  class="photo-icon">
+    </li>
+    <li class="photo-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/photo2.png"  class="photo-icon">
+    </li>
+    <li class="photo-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/photo3.png"  class="photo-icon">
+    </li>
+    <li class="photo-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/photo4.png"  class="photo-icon">
+    </li>
+    <li class="photo-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/photo5.png"  class="photo-icon">
+    </li>
+    <li class="photo-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/photo6.png"  class="photo-icon">
+    </li>
+    <li class="photo-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/photo7.png"  class="photo-icon">
+    </li>
+    <li class="photo-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/photo8.png"  class="photo-icon">
+    </li>
+  </ul>
+</div><!--/photo-wrapper-->
 <?php get_footer();?>
