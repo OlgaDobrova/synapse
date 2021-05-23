@@ -43,8 +43,6 @@ endif;
 
 add_action( 'after_setup_theme', 'synapse_theme_setup' );
 
-
-
 // правильный способ подключить стили и скрипты
 
 function enqueue_synapse_style() {
