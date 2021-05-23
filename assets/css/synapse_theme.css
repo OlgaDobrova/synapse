@@ -71,7 +71,7 @@
 }
 
 .header-menu {
-  margin-left: 40px;
+  margin-left: 60px;
   padding: 0;
   list-style: none;
 }
@@ -82,8 +82,9 @@
 
 .header-slogan {
   width: 150px;
-  margin-left: 30px;
+  margin-left: 53px;
   margin-bottom: 104px;
+  padding: 0;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 20px;
@@ -128,7 +129,7 @@
 
 .custom-logo {
   padding: 0;
-  margin: 29px 40px 26px;
+  margin: 29px 48px 26px;
   width: 159px;
   height: 167px;
 }
@@ -327,6 +328,7 @@
   display: flex;
   width: 1105px;
   margin-left: 30px;
+  overflow: hidden;
 }
 
 .equipment-basic {
@@ -490,6 +492,7 @@
 .history-wrapper {
   width: 1142px;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 .history-title {
@@ -558,7 +561,7 @@
 }
 
 .history-video {
-  width: 540px;
+  width: 535px;
   height: 364px;
   z-index: -1;
   position: absolute;
@@ -576,6 +579,12 @@
   margin-top: 330px;
 }
 
+.photo-wrapper {
+  width: 1142px;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
 .photo-lists {
   margin: 0;
   padding: 0;
@@ -588,8 +597,8 @@
 }
 
 .photo-list {
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin-left: 15.5px;
+  margin-bottom: 15px;
   padding: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -597,7 +606,7 @@
 }
 
 .photo-icon {
-  width: 268px;
+  width: 265px;
   height: 199px;
 }
 
@@ -639,7 +648,7 @@
 }
 
 .footer-contacts {
-  margin-left: 185px;
+  margin-left: 135px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,6 +677,7 @@
 .footer-contacts-social {
   width: 235px;
   margin-left: 58px;
+  margin-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
