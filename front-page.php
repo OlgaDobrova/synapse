@@ -12,9 +12,9 @@
       <a href="http://fasebook.com/">
         <img src="<?php echo get_template_directory_uri().'/assets/images/fasebook.svg';?>" alt="" class="smeta-social-icon">
       </a>
-      <a href="http://vk.com/">
+
         <img src="<?php echo get_template_directory_uri().'/assets/images/komment.svg';?>" alt="" class="smeta-social-komment">
-      </a>
+
     </div><!--/.smeta-social-->
       <div class="smeta-parameters">
         <img src="<?php echo get_template_directory_uri().'/assets/images/house.svg';?>" alt="" class="smeta-parameters-1">
