@@ -18,7 +18,7 @@
     </div><!--/.smeta-social-->
       <div class="smeta-parameters">
         <img src="<?php echo get_template_directory_uri().'/assets/images/house.svg';?>" alt="" class="smeta-parameters-1">
-        <img src="<?php echo get_template_directory_uri().'/assets/images/parameters.svg';?>" alt="" class="smeta-parameters-2">
+        <img src="<?php echo get_template_directory_uri().'/assets/images/parameters.png';?>" alt="" class="smeta-parameters-2">
       </div><!--/.parameters-->
 
       <div class="smeta-text">Цена за домокомплект:</div>
@@ -35,97 +35,129 @@
     <img src="<?php echo get_template_directory_uri().'/assets/images/arrow.png';?>" alt="" class="bread-crumbs-icon">Проекты
   </div><!--/bread-crumbs-->
   <h3 class="house-project-title"><?php the_title();?></h3>
-   <div class="house-project-wrapper"> <!--Слайдер + планы дома-->
-    <div class="house-project-wrapper2">
-      <div class="house-project-swiper"><!--Слайдер-->
-        <?php
-          //Объявляем глобальную переменную post
-          global $post;
-          $query = new WP_Query([ 
-          	'posts_per_page' => 1,
-            'category_name'  => 'photoprogect',
-          ]);
-          //проверка на наличие постов
-          //если есть
-          if($query->have_posts()){
-            //то запускаем цикл
-          	while( $query->have_posts()){
-          		$query->the_post();
-        ?>
+  <div class="house-project-wrapper-toggle">
+    <div class="house-project-wrapper"> <!--Слайдер + планы дома-->
+      <div class="house-project-wrapper2">
+        <div class="house-project-swiper"><!--Слайдер-->
+          <?php
+            //Объявляем глобальную переменную post
+            global $post;
+            $query = new WP_Query([ 
+            	'posts_per_page' => 1,
+              'category_name'  => 'photoprogect',
+            ]);
+            //проверка на наличие постов
+            //если есть
+            if($query->have_posts()){
+              //то запускаем цикл
+            	while( $query->have_posts()){
+            		$query->the_post();
+          ?>
 
-        <!-- Слайдер Slider main container -->
-        <div class="swiper-container house-project-swiper-slider">
-          <!-- Дополнительная необходимая обертка -->
-          <div class="swiper-wrapper">
-            <!-- Слайды -->
-            <!--get_attached_media выводит все картинки, которые прикреплены к посту-->
-            <?php $images = get_attached_media('image');
-              foreach ($images as $image) {
-                //guid - это ссылка на картинку
-                //print_r($image -> guid) - вывести ссылку на картинку
-                echo '<div class="swiper-slide"><img src="';
-                print_r($image -> guid);
-                echo '"></div>';
-              }
-            ?>
+          <!-- Слайдер Slider main container -->
+          <div class="swiper-container house-project-swiper-slider">
+            <!-- Дополнительная необходимая обертка -->
+            <div class="swiper-wrapper">
+              <!-- Слайды -->
+              <!--get_attached_media выводит все картинки, которые прикреплены к посту-->
+              <?php $images = get_attached_media('image');
+                foreach ($images as $image) {
+                  //guid - это ссылка на картинку
+                  //print_r($image -> guid) - вывести ссылку на картинку
+                  echo '<div class="swiper-slide"><img src="';
+                  print_r($image -> guid);
+                  echo '"></div>';
+                }
+              ?>
+            </div>
+            <div class="swiper-pagination"></div>
+
+             <!-- Если нам нужны кнопки навигации 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            < !-- Если нам нужна полоса прокрутки 
+            <div class="swiper-scrollbar"></div>  -->
+
+          </div><!--/.swiper-container photo-report-slider-->
+              
+          <?php 
+            	}
+            } else {
+            	// Постов не найдено
+              ?>
+              <p>Постов не найдено</p>
+              <?php
+            }
+            wp_reset_postdata(); // Сбрасываем $post
+          ?>
+        </div><!--/.house-project-swiper/ -->
+
+        <div class="house-project-swiper2">
+          <div class="house-project-swiper2-cell1">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/arrow-left.png';?>" alt="slider arrow - left">
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="house-project-swiper2-cell">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/carousel1.png';?>" alt="smaller view picture">
+          </div>
+          <div class="house-project-swiper2-cell">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/carousel2.png';?>" alt="smaller view picture">
+          </div>
+          <div class="house-project-swiper2-cell">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/carousel3.png';?>" alt="smaller view picture">
+          </div>
+          <div class="house-project-swiper2-cell">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/carousel4.png';?>" alt="smaller view picture">
+          </div>
+          <div class="house-project-swiper2-cell1">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/arrow-right.png';?>" alt="slider arrow - right">
+          </div> 
+        </div>
+      </div><!--/house-project-wrapper2-->
 
-           <!-- Если нам нужны кнопки навигации 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+      <div class="house-project-plan"><!--планы дома-->
+        <div class="house-project-plan-1">
+          <div class="house-project-plan-text">1 этаж</div>
+          <img src="<?php echo get_template_directory_uri().'/assets/images/etazhn1.png';?>" alt="" class="house-project-plan-view">
+        </div>
+        <div class="house-project-plan-2">
+          <div class="house-project-plan-text">2 этаж</div>
+          <img src="<?php echo get_template_directory_uri().'/assets/images/etazhn2.png';?>" alt="" class="house-project-plan-view">
+        </div>
+      </div><!--/.house-project-plan/ -->
+    </div><!--/.house-project-wrapper-->
 
-          < !-- Если нам нужна полоса прокрутки 
-          <div class="swiper-scrollbar"></div>  -->
-
-        </div><!--/.swiper-container photo-report-slider-->
+    <div class="house-project-smeta-toggle">
+      <div class="smeta-toggle">
+        <div class="smeta-toggle-text">Поделиться проектом</div>
+        <div class="smeta-toggle-social">
+          <a href="http://vk.com/">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/vk.svg';?>" alt="" class="smeta-toggle-social-icon">
+          </a>
+          <a href="http://ok.ru/">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/ok.svg';?>" alt="" class="smeta-toggle-social-icon-ok">
+          </a>
+          <a href="http://fasebook.com/">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/fasebook.svg';?>" alt="" class="smeta-toggle-social-icon">
+          </a>
             
-        <?php 
-          	}
-          } else {
-          	// Постов не найдено
-            ?>
-            <p>Постов не найдено</p>
-            <?php
-          }
-          wp_reset_postdata(); // Сбрасываем $post
-        ?>
-      </div><!--/.house-project-swiper/ -->
-
-      <div class="house-project-swiper2">
-        <div class="house-project-swiper2-cell1">
-          <img src="<?php echo get_template_directory_uri().'/assets/images/arrow-left.png';?>" alt="slider arrow - left">
-        </div>
-        <div class="house-project-swiper2-cell">
-          <img src="<?php echo get_template_directory_uri().'/assets/images/carousel1.png';?>" alt="smaller view picture">
-        </div>
-        <div class="house-project-swiper2-cell">
-          <img src="<?php echo get_template_directory_uri().'/assets/images/carousel2.png';?>" alt="smaller view picture">
-        </div>
-        <div class="house-project-swiper2-cell">
-          <img src="<?php echo get_template_directory_uri().'/assets/images/carousel3.png';?>" alt="smaller view picture">
-        </div>
-        <div class="house-project-swiper2-cell">
-          <img src="<?php echo get_template_directory_uri().'/assets/images/carousel4.png';?>" alt="smaller view picture">
-        </div>
-        <div class="house-project-swiper2-cell1">
-          <img src="<?php echo get_template_directory_uri().'/assets/images/arrow-right.png';?>" alt="slider arrow - right">
-        </div> 
-      </div>
-    </div><!--/house-project-wrapper2-->
-
-    <div class="house-project-plan"><!--планы дома-->
-      <div class="house-project-plan-1">
-        <div class="house-project-plan-text">1 этаж</div>
-        <img src="<?php echo get_template_directory_uri().'/assets/images/etazhn1.png';?>" alt="" class="house-project-plan-view">
-      </div>
-      <div class="house-project-plan-2">
-        <div class="house-project-plan-text">2 этаж</div>
-        <img src="<?php echo get_template_directory_uri().'/assets/images/etazhn2.png';?>" alt="" class="house-project-plan-view">
-      </div>
-    </div><!--/.house-project-plan/ -->
-  </div><!--/.house-project-wrapper-->
-
+            <img src="<?php echo get_template_directory_uri().'/assets/images/komment.svg';?>" alt="" class="smeta-toggle-social-komment">
+            
+        </div><!--/.smeta-toggle-social-->
+        <div class="smeta-toggle-parameters">
+          <img src="<?php echo get_template_directory_uri().'/assets/images/house.svg';?>" alt="" class="smeta-toggle-parameters-1">
+          <img src="<?php echo get_template_directory_uri().'/assets/images/parameters.png';?>" alt="" class="smeta-toggle-parameters-2">
+        </div><!--/.parameters-->
+            
+        <div class="smeta-toggle-text">Цена за домокомплект:</div>
+        <div class="smeta-toggle-text-green">1 200 000 руб.</div>
+        <div class="smeta-toggle-text-button">Заказать смету</div>
+        <div class="smeta-toggle-about">
+          Проект «На озере» - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу  для ужинов и завтраков.
+        </div><!--/.smeta-toggle-about-->
+      </div><!--/.smeta-toggle-->
+    </div><!--/.cherif-smeta-toggle-->
+  </div><!--/house-project-wrapper-toggle-->
 
 <div class="equipment-wrapper"><!--Блок КОМПЛЕКТАЦИЯ-->
   <div class="equipment-basic"><!--Комплектация "Базовая"-->
@@ -148,7 +180,7 @@
 
   <div class="equipment-optimal"><!--Комплектация "Оптимальная"-->
     <div class="equipment-name"><img src="<?php echo get_template_directory_uri()?>/assets/images/optimum.png" class="equipment-icon">
-    <span  class="equipment-name-text" >Комплектация "Оптимальная"    (домокомплект + монтаж)</span></div>
+    <span  class="equipment-name-text" >Комплектация "Оптимальная" (домокомплект + монтаж)</span></div>
       
     <ul class="equipment-list">
       <li class="equipment-list-1">Укладка межвенцового утеплителя</li>
@@ -187,9 +219,9 @@
   <div class="history-title">По  даному проекту были построены дома</div>
   <ul class="history-lists">
     <li class="history-list">
-      <img src="<?php echo get_template_directory_uri()?>/assets/images/history-haus1.png"  class="history-icon">
-      <div class="history-text1">Вологодская область,<br>д. Капустино</div>
-      <div class="history-docpdf">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/history-haus1.png"  class="history-icon-1">
+      <div class="history-text1-1">Вологодская область,<br>д. Капустино</div>
+      <div class="history-docpdf-1">
         <img src="<?php echo get_template_directory_uri()?>/assets/images/history-doc1.png" class="history-doc">
         <img src="<?php echo get_template_directory_uri()?>/assets/images/pdf.png" class="history-pdf">
       </div>

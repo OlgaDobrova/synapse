@@ -21,12 +21,13 @@
   &-chief //главный блок
     //border: 1px solid green
     width: 1260px
+
   &-footer
     //border: 1px solid green
     width: 1260px
     margin-top: 90px
 
-.bread-crumbs
+.bread-crumbs //хлебные крошки
   margin-top: 30px
   margin-left: 30px
   //border: 1px solid green
@@ -35,7 +36,7 @@
   color: #1c1c1c
   font-weight: 300
   font-family: "Roboto"
-  &-icon
+  &-icon //стрелка
     //border: 1px solid green
     padding: 0
     width: 18px
@@ -45,10 +46,12 @@
 
 @media screen and ( max-width: 1200px )
   .container
-    max-width: 960px
-@media screen and ( max-width: 1024px)
-  .container
-    max-width: 768px
-@media screen and ( max-width: 768px)
-  .container
-    max-width: 576px
+    width: 1200px
+    &-header //шапка
+      width: 220px
+    &-smeta //блок смета
+      display: none
+    &-chief //главный блок
+      width: 980px
+    &-footer
+      display: none

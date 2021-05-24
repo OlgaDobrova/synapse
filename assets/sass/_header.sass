@@ -72,3 +72,49 @@
       color: #ffffff
       font-weight: bold
       font-family: "Roboto-Slab"
+
+@media screen and ( max-width: 1200px )
+  .header
+    &-menu
+      margin-left: 37px
+    &-slogan
+      width: 104px
+      margin-left: 52px
+    &-telef
+      margin-left: 38px
+    &-work-time
+      margin-left: 39px
+    &-feedback
+      margin-top: 50px
+      margin-left: 37px
+  .custom
+    &-logo
+      margin-left: 25px
+
+@media screen and ( max-width: 768px )
+  .header
+    &-wrapper
+      position: relative
+    &-menu
+      //меню выстроить по вертикали
+      flex-direction: column
+      align-items: flex-start
+      a
+        color: #000
+      //toggle - это 3 гориз полосы - вызов меню
+      &-toggle
+        display: flex
+        width: 30px
+        height: 20px
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        margin-left: 10px
+        span
+          width: 100%
+          height: 1px
+          background-color: #ffffff
+  .menu
+    &-item
+      &:not(:last-child)
+        margin-bottom: 15px

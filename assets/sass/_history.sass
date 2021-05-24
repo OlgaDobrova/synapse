@@ -29,6 +29,9 @@
   &-icon
     width: 258px
     height: 174px
+    &-1
+      width: 258px
+      height: 174px
   &-text1
     font-size: 16px
     color: #343434
@@ -40,6 +43,10 @@
     //border: 1px solid orange
     display: flex
     align-items: start
+    &-1
+      //border: 1px solid orange
+      display: flex
+      align-items: start
   &-doc
     width: 91px
     height: 124px
@@ -62,3 +69,18 @@
     font-family: "Roboto"
     margin-left: 30px
     margin-top: 330px
+
+@media screen and ( max-width: 1200px )
+  .history
+    &-wrapper
+      width: 980px
+      //border: 1px solid blue
+    &-icon
+      &-1
+        display: none
+    &-text1
+      &-1
+        display: none
+    &-docpdf
+      &-1
+        display: none

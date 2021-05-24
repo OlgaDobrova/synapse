@@ -3,6 +3,7 @@
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <!--подкючение возможности адаптивной верстки по ширине страницы с маштабом 1:1-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php wp_head();?>
 </head>
@@ -56,7 +57,7 @@
           ] );
         ?>
 
-
+        <!--Меню для маленького экрана-->
         <a href="#" class="header-menu-toggle">
           <span></span>
           <span></span>
