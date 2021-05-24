@@ -59,10 +59,11 @@
 
         <!--Меню для маленького экрана-->
         <a href="#" class="header-menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
+            <span></span>
+            <span></span>
+            <span></span>  
         </a>
+        <span class="header-menu-toggle-1">МЕНЮ</span>
 
         <div class="header-telef">8 800 2000 679</div>
         <div class="header-work-time">пн - пт с 9:00 до 18:00</div>
