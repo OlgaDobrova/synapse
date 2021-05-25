@@ -209,11 +209,41 @@
     <div class="delivery-text">Стоимость  доставки - <b class="delivery-text-bold">80 рублей</b> за один километр</div>
 </div><!--/delivery-wrapper-->
 
+<div class="delivery-wrapper-toggle"><!--Блок ДОСТАВКА-для экрана 320px-->
+  <h2 class="delivery-title">Доставка</h2>
+    <div class="delivery-text">Стоимость  доставки - <b class="delivery-text-bold">80 рублей</b> за один километр.</div>
+    <div class="delivery-text-1">Чтобы  доставить  домокоплект  по данному<br>проекту   необходимо <b class="delivery-text-bold">4 единицы техники.</b></div>
+    <div class="delivery-Car">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/Car.png" class="delivery-icon">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/Car.png" class="delivery-icon">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/Car.png" class="delivery-icon">
+    </div>
+</div><!--/delivery-wrapper-toggle-->
+
 <div class="descriptions-wrapper"><!--Блок ОПИСАНИЕ ПРОЕКТА-->
   <div class="descriptions-title">Описание проекта</div>
+  <div class="descriptions-text-toggle">Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу  для ужинов и завтраков. Проект «Волна» - чудесное решение для южных широт нашей страны. </div>
   <div class="descriptions-text">Проект "Волна" - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу для ужинов и завтраков.</div>
   <img src="<?php echo get_template_directory_uri()?>/assets/images/description-house.png" class="descriptions-icon">
 </div><!--/descriptions-wrapper-->
+
+<div class="history-wrapper-toggle"><!--По проекту постороены дома для экрана 320px-->
+  <div class="history-title">По  даному проекту были построены дома</div>
+  <ul class="history-lists">
+    <li class="history-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/history-video.png" class="history-video">
+      <div class="history-text2">Вологодская область, село <br>Устье-Кубенское</div>
+    </li>
+    <li class="history-list">
+      <img src="<?php echo get_template_directory_uri()?>/assets/images/history-haus2.png"  class="history-icon">
+      <div class="history-text1">Вологодская область,<br>д. Капустино</div>
+      <div class="history-docpdf">
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/history-doc2.png" class="history-doc">
+        <img src="<?php echo get_template_directory_uri()?>/assets/images/pdf.png" class="history-pdf">
+      </div>
+    </li>
+  </ul> 
+</div><!--/history-wrapper-toggle-->
 
 <div class="history-wrapper"><!--По проекту постороены дома-->
   <div class="history-title">По  даному проекту были построены дома</div>

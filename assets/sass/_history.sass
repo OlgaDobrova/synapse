@@ -5,6 +5,8 @@
     margin-bottom: 50px
     //за пределы рубрики ничто не выходит
     overflow: hidden
+    &-toggle
+      display: none
   &-title
     margin-left: 30px
     font-size: 30px
@@ -90,3 +92,86 @@
       width: 930px
       //border: 1px solid blue
       margin-left: 10px
+@media screen and ( max-width: 320px )
+  .history
+    &-wrapper
+      display: none
+      &-toggle
+        display: block
+        //border: 1px solid blue
+        width: 100%
+        margin-left: 0
+    &-title
+      margin-top: 25px
+      margin-left: 15px
+      margin-right: 27px
+      margin-bottom: 20px
+      font-size: 23px
+      text-align: left
+      color: #1c1c1c
+      font-weight: bold
+      font-family: "Roboto Slab"
+    &-lists
+      margin: 0
+      padding: 0
+      //border: 1px solid green
+      list-style: none
+      display: block
+      //position: relative
+    &-list
+      border: 1px solid #fff
+      margin-left: 7px
+      padding: 0
+      margin-bottom: 30px
+
+    &-video
+      //border: 1px solid green
+      width: 306px
+      height: 207px
+      z-index: -1
+      position: absolute
+      background-color: transparent
+      overflow: hidden
+      margin: 0
+      padding: 0
+    &-text2
+      //position: absolute
+      //border: 1px solid blue
+      z-index: 0
+      font-size: 14px
+      color: #ffffff
+      font-weight: 300
+      font-family: "Roboto"
+      margin-top: 150px
+      margin-left: 7
+      margin-bottom: 20px
+    &-icon
+      //border: 1px solid green
+      position: relative
+      width: 258px
+      height: 174px
+      &-1
+        width: 258px
+        height: 174px
+    &-text1
+      font-size: 16px
+      color: #343434
+      font-weight: 300
+      font-family: "Roboto"
+      margin-top: 25px
+      margin-bottom: 20px
+    &-docpdf
+      //border: 1px solid orange
+      display: flex
+      align-items: start
+      &-1
+        //border: 1px solid orange
+        display: flex
+        align-items: start
+    &-doc
+      width: 91px
+      height: 124px
+      margin-right: 5px
+    &-pdf
+      width: 30px
+      height: 20px

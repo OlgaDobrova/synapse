@@ -42,6 +42,8 @@
     text-align: start
     margin-top: 25px
     margin-bottom: 30px
+    &-toggle
+      display: none
 
 @media screen and ( max-width: 1200px )
   .descriptions
@@ -54,3 +56,32 @@
       width: 930px
       //border: 1px solid blue
       margin-left: 10px
+@media screen and ( max-width: 320px )
+  .descriptions
+    &-wrapper
+      width: 100%
+      //border: 1px solid blue
+      margin-left: 0px
+      text-align: left
+      padding-bottom: 0px
+      padding-top: 0px
+    &-icon
+      //border: 1px solid red
+      width: 320px
+      height: 210px
+    &-title
+      margin-top: 30px
+      margin-left: 15px
+    &-text
+      display: none
+      &-toggle
+        display: block
+        margin-top: 30px
+        margin-left: 15px
+        margin-bottom: 50px
+        font-size: 16px
+        line-height: 24px
+        color: #1c1c1c
+        font-weight: 300
+        font-family: "Roboto"
+        text-align: start

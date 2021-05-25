@@ -62,3 +62,24 @@
       width: 84px
     &-chief //главный блок
       width: 940px
+@media screen and ( max-width: 320px )
+  .container
+    //border: 1px solid blue
+    width: 320px
+    //align-items: center
+    //justify-content: space-between
+    flex-direction: column
+    &-header //шапка
+      width: 100%
+      min-height: 81px
+      background-color: #503314
+      -ms-flex-negative: 0
+      flex-shrink: 0
+      background: url(../images/tree-bgc.png) repeat-x
+      letter-spacing: -1px
+    &-chief //главный блок
+      width: 320px
+      //за пределы рубрики ничто не выходит
+      //overflow: hidden
+  .bread-crumbs //хлебные крошки
+    display: none
